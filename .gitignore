@@ -38,3 +38,6 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+.env*
+!.env.example

@@ -1,0 +1,6 @@
+.vercel
+.env*
+
+# Vercel CLI auto-installed agent skill docs (local tooling, not app code)
+.agents/
+skills-lock.json

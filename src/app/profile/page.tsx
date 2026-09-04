@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
@@ -113,6 +113,14 @@ type ProfileData = {
 };
 
 export default function ProfilePage() {
+  return (
+    <Suspense fallback={null}>
+      <ProfilePageInner />
+    </Suspense>
+  );
+}
+
+function ProfilePageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { status } = useSession();
