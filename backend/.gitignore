@@ -1,5 +1,6 @@
 .vercel
 .env*
+!.env.example
 
 # Vercel CLI auto-installed agent skill docs (local tooling, not app code)
 .agents/
